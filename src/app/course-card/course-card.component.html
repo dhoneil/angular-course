@@ -1,0 +1,13 @@
+<div class="course-card">
+  <div class="course-title">
+    {{ title }}
+  </div>
+  <img width="300" alt="Angular Logo" src="{{ course.iconUrl }}" />
+
+  <!-- insert icon url -->
+  <img width="300" alt="Angular Logo" [src]="course.iconUrl"  />
+
+  <div class="course-description">{{ cardIndex }} {{ course.description }}</div>
+
+  <button (click)="onCourseViewed()">view course</button>
+</div>
